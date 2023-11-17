@@ -29,7 +29,7 @@ RUN apt-get update -y \
  && apt-get install -y git cmake build-essential libgl1-mesa-dev libxt-dev \
         libqt5x11extras5-dev libqt5help5 qttools5-dev qtxmlpatterns5-dev-tools libqt5svg5-dev \
         python3-dev python3-numpy libtbb-dev ninja-build qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools \
-        libminizip-dev libboost-dev openssl libhdf5-dev \
+        libminizip-dev libboost-dev openssl libhdf5-dev zlib1g-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
