@@ -39,6 +39,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v5
         with:
+          file: paraview-fesapi-for-ci.Dockerfile
           context: .
           push: true
           build-args: |
