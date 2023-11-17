@@ -52,6 +52,8 @@ RUN mkdir -p $FESAPI_DIR \
             -DCMAKE_INSTALL_PREFIX=$FESAPI_DIR \
             -DCMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=TRUE \
             -DCMAKE_BUILD_TYPE=$BUILD_TYPE \
+	    -DMINIZIP_INCLUDE_DIR:PATH=/usr/include/minizip/ \
+            -DMINIZIP_LIBRARY_RELEASE:PATH=/usr/lib/x86_64-linux-gnu/libminizip.a \  
             -DWITH_EXAMPLE:BOOL=OFF \
             -DWITH_DOTNET_WRAPPING:BOOL=OFF \
             -DWITH_JAVA_WRAPPING:BOOL=OFF \
